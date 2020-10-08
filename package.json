@@ -1,0 +1,21 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.6",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "pug": "^3.0.0",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Derek Paul",
+  "license": "MIT"
+}

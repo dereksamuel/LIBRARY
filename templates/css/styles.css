@@ -1,0 +1,162 @@
+:root {
+  --color-light-yell: #f8efd4;
+  --color-dark-yell: #edc988;
+  --color-intensitive: #d7385e;
+  --color-shadow: #132743;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 75%;
+}
+
+.Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-shadow);
+  color: var(--color-dark-yell);
+  padding: 1rem;
+}
+
+.Menu__nav__a {
+  text-decoration: none;
+  color: var(--color-dark-yell);
+  font-size: 2rem;
+}
+
+.Menu__form__search {
+  padding: 1.2rem;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  margin: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: .2rem solid var(--color-light-yell);
+  border-radius: .5rem;
+}
+
+.btn:focus {
+  background-color: #dfdfdf;
+  color: #585858;
+}
+
+.btn.danger {
+  background-color: var(--color-intensitive);
+  border-color: #f84972;
+  color: white;
+}
+
+.btn.danger:focus {
+  outline: none;
+  box-shadow: 0 0 12px var(--color-intensitive);
+  background-color:#85273d;
+  color: #ffbaca;
+}
+
+.btn.sell {
+  background-color: rgb(67, 212, 91);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: .5rem;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+}
+
+.btn.sell a {
+  text-decoration: none;
+  color: #00447a;
+}
+
+.btn.sell a:hover {
+  text-decoration: underline;
+}
+
+.btn.not-sell {
+  background-color: var(--color-intensitive);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: .5rem;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+}
+
+.btn.not-sell a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn.not-sell a:hover {
+  text-decoration: underline;
+}
+
+.btn.center {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.Books {
+  list-style: none;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 55px auto;
+}
+
+.Books__item {
+  display: inline-block;
+  background-color: var(--color-shadow);
+  margin: 15px;
+  height: 28rem;
+  width: 20rem;
+  text-align: start;
+  overflow: auto;
+  position: relative;
+  border-radius: 22px;
+}
+
+.Books__item h1 {
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--color-intensitive);
+}
+
+.Btn__item--title {
+  text-align: center;
+  background-color: var(--color-shadow);
+  padding: .5rem;
+}
+
+.Btn__item--title span {
+  color: #edc988;
+  font-weight: bold;
+}
+
+.TEXT {
+  padding: 15px;
+  background-color: #fff;
+  width: 16rem;
+  height: 19.4rem;
+  color: var(--color-shadow);
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.VALUE {
+  font-weight: bold;
+  margin: 2px;
+}

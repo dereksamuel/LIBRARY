@@ -1,0 +1,33 @@
+include head.pug
+block content
+  main.Hero#app
+    section
+      ul.Books
+        each book in data
+          li.Books__item
+            h1 Book #
+              span=book.book_id
+            p.Btn__item--title
+              span=book.title
+            article.TEXT
+              p.Books__item--year Year:
+                span.VALUE=book.year
+              p.Books__item--lenguage Langauge:
+                span.VALUE=book.lenguage
+              p.Books__item--copies Copies:
+                span.VALUE=book.copies
+              p.Books__item--author Author:
+                p.VALUE=book.name
+              if book.description
+                p.Books__item--desc Description:
+                  span.VALUE=book.description
+              if book.price
+                p.Books__item--price Price:
+                  span.VALUE=book.price
+              if book.sellable === 1
+                button.btn.sell
+                  a(href="#") SELLABLE
+              else
+                button.btn.not-sell
+                  a(href="#") NOT SELLABLE
+      button.btn.center LOAD MORE BOOKS

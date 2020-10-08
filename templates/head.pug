@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(name="description", content="SPA")
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="static/styles.css")
+    //- script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+    link(rel="shortcut icon", href="https://img.icons8.com/plasticine/100/000000/apple-books.png", type="image/x-icon")
+    title Library
+  body
+    header.Menu
+      nav.Menu__nav
+        h1: a(href="/library").Menu__nav__a Library
+      form(action="" method="GET").Menu__form
+        label(for="search").Menu__form__txt Search in SQL
+        input(placeholder="Derek" id="search" name="search" required).Menu__form__search
+        button.btn.danger Search
+    //- header.Types
+    //-   h1 Search by:
+    //-   label(for="books") BOOKS
+    //-     input(type="checkbox", name="books" id="books")
+    //-   label(for="authors") AUTHORS
+    //-     input(type="checkbox", name="authors" id="authors")
+    block content
+    script(src="scripts")
